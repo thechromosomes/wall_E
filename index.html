@@ -604,7 +604,7 @@
         return tl;
       },
       coordinates(e) {
-        const audio = new Audio(
+        //const audio = new Audio(
             "https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/Whoa.mp3"
           ),
           walleBox = document.getElementById("walle").getBoundingClientRect(),
@@ -619,11 +619,11 @@
           this.x = -(e.clientX / 200);
           this.flip = true;
           if (this.audioPlay === false) {
-            audio.play();
-            this.audioPlay = true;
+            //audio.play();
+            //this.audioPlay = true;
           }
         } else {
-          this.audioPlay = false;
+          //this.audioPlay = false;
           this.x = e.clientX / 200 - 5;
           this.flip = false;
 
